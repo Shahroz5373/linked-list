@@ -13,11 +13,9 @@ int main() {
 	addNode(1, current);
 	addNode(9, current);
 	
-	cout << "The linked list before sorting is " << endl;
+	cout << "The linked list is " << endl;
 	printList(head); //prints the list
-	cout << "The linked list after sorting is " << endl;
-	sortList(head); // sorts the list 
-	printList(head); 
+	
 	return 0;
 }
 
