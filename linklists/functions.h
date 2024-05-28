@@ -23,32 +23,3 @@ void printList(Node *& head) {
 	cout << endl;
 
 }
-
-// function to sort list 
-void sortList(Node*& head) {
-    if (head == nullptr || head->next == nullptr) {
-        return;
-    }
-
-    Node* current;
-    bool swapped;
-    do {
-        swapped = false;
-        current = head;
-        while (current->next != nullptr) {
-            if (current->data > current->next->data) {
-                swap(current->data, current->next->data);
-                swapped = true;
-            }
-            current = current->next;
-        }
-    } while (swapped);
-}
-
-
-void swap(int& a,int &b) {
-	a = a + b;
-	b = a - b;
-	a = a - b;
-}
-
